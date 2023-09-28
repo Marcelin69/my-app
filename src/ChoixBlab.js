@@ -6,21 +6,37 @@ const ChoixBlag = () => {
   const [categorie, setCategorie] = useState("");
   const [catchos, setCatchos] = useState([
     "animal",
+    " ",
     "career",
+    " ",
     "celebrity",
+    " ",
     "dev",
+    " ",
     "explicit",
+    " ",
     "fashion",
+    " ",
     "food",
+    " ",
     "history",
+    " ",
     "money",
+    " ",
     "movie",
+    " ",
     "music",
+    " ",
     "political",
+    " ",
     "religion",
+    " ",
     "science",
+    " ",
     "sport",
+    " ",
     "travel",
+    " ",
   ]);
   const [lete, setLete] = useState("");
   const Handlsubmit = (e) => {
@@ -47,6 +63,8 @@ const ChoixBlag = () => {
         <input type="text" onChange={ChangeIput} value={categorie} />
         <input type="submit" />
       </form>
+      <h1>Tape un des mots suivant dans le formulaire.</h1>
+      <p className="blagmot">{catchos}</p> 
       <h1>Choisissez votre blague </h1>
       <Link to={`/blag/${lete}`}>voir mon blague</Link>
     </div>
