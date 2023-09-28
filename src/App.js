@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import "./App.css";
+import Blague from "./Blague";
+import { Routes, Route, json } from "react-router-dom";
+import ChoixBlag from "./ChoixBlab";
+import NavigationBar from "./composants/NavigationBar";
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+      <NavigationBar />
+      <Routes>
+        {/* <Route path="/" element={<Wellcomm />} /> */}
+        <Route path="/choix" element={<ChoixBlag />} />
+        <Route path="/blag/:id" element={<Blague />} />
+
+      </Routes>
     </div>
   );
 }
