@@ -45,3 +45,9 @@
   margin-left: 1rem;
   text-decoration: dashed;
 }
+.btn{
+  border: 0.1rem solid black;
+  padding: 0.5rem;
+  font-weight: 500;
+  border-radius: 15px;
+}

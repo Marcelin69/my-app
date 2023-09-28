@@ -66,7 +66,7 @@ const ChoixBlag = () => {
       <h1>Tape un des mots suivant dans le formulaire.</h1>
       <p className="blagmot">{catchos}</p> 
       <h1>Choisissez votre blague </h1>
-      <Link to={`/blag/${lete}`}>voir mon blague</Link>
+      <Link to={`/blag/${lete}`} className="btn">voir mon blague</Link>
     </div>
   );
 };
